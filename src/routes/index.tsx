@@ -1,14 +1,11 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
+import LandingPage from "../pages/landing-page";
 
 export const Route = createFileRoute("/")({
-  component: RouteComponent,
+  component: LandingPage,
   beforeLoad(ctx) {
     if (ctx.context.isAuthenticated) {
       throw redirect({ to: "/game" });
     }
   },
 });
-
-function RouteComponent() {
-  return <div>Hello "/"!</div>;
-}
