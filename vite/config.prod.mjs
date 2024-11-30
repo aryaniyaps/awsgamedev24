@@ -23,7 +23,7 @@ export default defineConfig({
   plugins: [TanStackRouterVite(), react(), phasermsg()],
   resolve: {
     alias: {
-      "@": Path.resolve(__dirname, "./src"),
+      "@": Path.resolve(__dirname, "../src"),
     },
   },
   logLevel: "warning",

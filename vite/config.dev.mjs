@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [TanStackRouterVite(), react()],
   resolve: {
     alias: {
-      "@": Path.resolve(__dirname, "./src"),
+      "@": Path.resolve(__dirname, "../src"),
     },
   },
   server: {
